@@ -1,0 +1,12 @@
+{
+  "name": "code-challenge-callback",
+  "version": "1.0.0",
+  "description": "Callback Code Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "author": "Jonah",
+  "license": "ISC"
+}
