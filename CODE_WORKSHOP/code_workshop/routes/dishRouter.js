@@ -1,9 +1,10 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const dishRouter = express.Router();
-dishRouter.use(bodyParser.json());
+const express = require('express'); // Saying we will use the express module middleware
+const bodyParser = require('body-parser'); // 
+const dishRouter = express.Router(); // A Router instance for route handlers   
+dishRouter.use(bodyParser.json()); // body-parser extract the entire body portion of an incoming request stream and exposes it on req.body. Used with express
 
-
+//req == response from client
+//res == response from server.
 dishRouter.route('/')
 .all((req,res,next) => {
     res.statusCode = 200;
